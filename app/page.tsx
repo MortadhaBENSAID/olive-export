@@ -1,54 +1,138 @@
 "use client";
 import QuoteForm from "./QuoteForm";
+
 export default function Home() {
-
-  
-
   return (
-    
-    <main style={{ fontFamily: "Inter, Arial", color: "#1f1f1f" }}>
 
+    <main style={{ fontFamily: "Inter, Arial", color: "#1f1f1f",  margin: 0,
+  padding: 0 ,}}>
 
+      {/* HERO */}
+
+      
       <section style={{
         padding: "120px 60px",
-        background: "linear-gradient(to right, #f5f1e6, #ffffff)"
+        background: "linear-gradient(to right, #f5f1e6, #ffffff)",
+        display: "grid",
+
+ 
+        alignItems: "center"
       }}>
-        <p style={{ letterSpacing: "2px", color: "#6b7a5c" }}>
-          TUNISIAN OLIVE OIL EXPORT
-        </p>
+          <p style={{ letterSpacing: "2px", color: "#55a504" }}>
+            TUNISIAN OLIVE OIL EXPORT
+          </p>
+          
+          <h1 style={{
+            fontSize: "56px",
+            marginTop: "20px",
+            fontWeight: "600"
+          }}>
+            Bulk Olive Oil Supplier from Tunisia - Export Worldwide
+          </h1 >
+        </section>
 
-        <h1 style={{
-          fontSize: "56px",
-          marginTop: "20px",
-          maxWidth: "800px",
-          fontWeight: "600"
-        }}>
-          Bulk Olive Oil Supplier from Tunisia - Export Worldwide
-        </h1>
 
-        <p style={{
-          fontSize: "18px",
-          marginTop: "20px",
-          maxWidth: "700px",
-          color: "#555"
-        }}>
-          We are a direct Tunisian olive oil producer supplying bulk extra virgin olive oil and private label solutions to distributors, wholesalers, and food brands worldwide.</p>
 
-        <a href="#quote" style={{
-          display: "inline-block",
-          marginTop: "30px",
-          padding: "14px 26px",
-          background: "#556B2F",
-          color: "white",
-          textDecoration: "none",
-          borderRadius: "6px"
-        }}>
-          Get FOB Price & Quote
-        </a>
-     
+
+
+
+<section style={{
+        padding: "0px 30px",
+        background: "linear-gradient(to right, #f5f1e6, #ffffff)",
+        display: "grid",
+        gridTemplateColumns: "repeat(2, 1fr)",
+        gap: "40px",
+        alignItems: "center"
+      }}>
+          <p style={{
+            fontSize: "18px",
+            marginTop: "0px",
+            color: "#555"
+          }}>
+            We are a direct Tunisian olive oil producer supplying bulk extra virgin olive oil and private label solutions to distributors worldwide.
+          </p>
+        <img src="/images/femme_recolt.jfif" 
+          alt="olive oil export"
+          style={{
+            width: "100%",
+            borderRadius: "1px",
+            objectFit: "cover"
+          }}/>
+        
+
+
+        
       </section>
 
+<section style={{
+        padding: "60px 30px",
+        background: "linear-gradient(to right, #f5f1e6, #ffffff)",
+        display: "grid",
+        gridTemplateColumns: "repeat(2, 1fr)",
+        gap: "40px",
+        alignItems: "center"
+      }}>
+
+        <img src="/images/plusieurs femme_recolt.jfif" 
+          alt="olive oil export"
+          style={{
+            width: "100%",
+            borderRadius: "1px",
+            objectFit: "cover"
+          }}/>
+        
+          <p style={{
+            fontSize: "18px",
+            marginTop: "0px",
+            color: "#555"
+          }}>
+            We are a direct Tunisian olive oil producer supplying bulk extra virgin olive oil and private label solutions to distributors worldwide.
+          </p>
+
+        
+      </section>
+
+
+
             <section style={{
+        padding: "80px 60px",
+        background: "#fff",
+        display: "grid",
+
+        gap: "30px"
+      }}>
+
+<img src="/images/homeimage.png" 
+          alt="olive oil export"
+          style={{
+            width: "100%",
+            borderRadius: "1px",
+            objectFit: "cover"
+          }}/>
+      {/* TRUST SECTION */}
+
+      
+      </section>
+          <section style={{
+        padding: "80px 60px",
+        background: "#fff",
+        display: "grid",
+        gridTemplateColumns: "repeat(2, 1fr)",
+        gap: "30px"
+      }}>
+            <a href="#quote" style={{
+            display: "inline-block",
+            marginTop: "0px",
+            padding: "14px 26px",
+            background: "#556B2F",
+            color: "white",
+            textDecoration: "none",
+            borderRadius: "18px"
+          }}>
+            Get FOB Price & Quote
+          </a>
+</section>
+      <section style={{
         padding: "80px 60px",
         background: "#fff",
         display: "grid",
@@ -57,22 +141,35 @@ export default function Home() {
       }}>
 
         <div>
+          <img
+            src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+            style={{ width: "100%", borderRadius: "10px" }}
+          />
           <h3>🇹🇳 Origin Tunisia</h3>
           <p>High-quality Mediterranean olive groves with controlled harvesting.</p>
         </div>
 
         <div>
+          <img
+            src="https://images.unsplash.com/photo-1581093458791-9d42e1b8b2d0"
+            style={{ width: "100%", borderRadius: "10px" }}
+          />
           <h3>🧪 Lab Tested</h3>
-          <p>Each batch is tested for acidity, purity, and international compliance.</p>
+          <p>Each batch is tested for acidity, purity, and compliance.</p>
         </div>
 
         <div>
+          <img
+            src="https://images.unsplash.com/photo-1604908812186-6c0a3c3d2c8a"
+            style={{ width: "100%", borderRadius: "10px" }}
+          />
           <h3>🚢 Export Ready</h3>
-          <p>Bulk logistics: IBC tanks, drums, and full container shipments.</p>
+          <p>Bulk logistics: containers, drums, and flexitank shipments.</p>
         </div>
 
       </section>
 
+      {/* STATS */}
       <section style={{
         padding: "80px 60px",
         background: "#f5f1e6",
@@ -80,24 +177,19 @@ export default function Home() {
         justifyContent: "space-around",
         textAlign: "center"
       }}>
-
         <div>
           <h2>+500T</h2>
           <p>Annual Capacity</p>
         </div>
-
         <div>
           <h2>10+</h2>
           <p>Export Countries</p>
         </div>
-
         <div>
           <h2>24h</h2>
           <p>Quote Response</p>
         </div>
-
       </section>
-
 
       {/* FEATURES */}
       <section style={{
@@ -107,20 +199,34 @@ export default function Home() {
         gap: "30px",
         background: "#fff"
       }}>
+
         <div>
+          <img
+            src="https://images.unsplash.com/photo-1603048297172-c92544798d5a"
+            style={{ width: "100%", borderRadius: "10px" }}
+          />
           <h3>Cold Pressed</h3>
           <p>Premium extra virgin olive oil extracted at low temperature.</p>
         </div>
 
         <div>
+          <img
+            src="https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0a"
+            style={{ width: "100%", borderRadius: "10px" }}
+          />
           <h3>Export Certified</h3>
           <p>Meets EU & international food safety standards.</p>
         </div>
 
         <div>
+          <img
+            src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d"
+            style={{ width: "100%", borderRadius: "10px" }}
+          />
           <h3>Bulk Supply</h3>
-          <p>IBC, drums 200L, flexitank shipments worldwide.</p>
+          <p>IBC tanks, drums, flexitank worldwide export.</p>
         </div>
+
       </section>
 
       {/* PRODUCTS */}
@@ -128,7 +234,17 @@ export default function Home() {
         padding: "80px 60px",
         background: "#f5f1e6"
       }}>
+
         <h2>Export Solutions</h2>
+
+        <img
+          src="https://images.unsplash.com/photo-1615485290382-441e4d9a0c8a"
+          style={{
+            width: "100%",
+            marginTop: "20px",
+            borderRadius: "12px"
+          }}
+        />
 
         <ul style={{ fontSize: "18px", marginTop: "20px", lineHeight: "2" }}>
           <li>Extra Virgin Olive Oil (Premium Grade)</li>
@@ -142,57 +258,36 @@ export default function Home() {
       {/* FORM */}
       <section id="quote" style={{ padding: "80px 60px" }}>
         <h2>Request a Quote</h2>
-
-
-       <QuoteForm />       
+        <QuoteForm />
       </section>
 
       {/* FOOTER */}
       <footer style={{
         padding: "40px 60px",
         background: "#1f1f1f",
-        color: "white",
-        marginTop: "40px"
+        color: "white"
       }}>
         <p>© Tunisian Olive Oil Export - Mediterranean Quality</p>
       </footer>
-      
-      <a
-  href="https://wa.me/216XXXXXXXX"
-  target="_blank"
-  style={{
-    position: "fixed",
-    bottom: "20px",
-    right: "20px",
-    background: "#25D366",
-    color: "white",
-    padding: "14px 18px",
-    borderRadius: "50px",
-    textDecoration: "none",
-    fontWeight: "bold",
-    boxShadow: "0 4px 10px rgba(0,0,0,0.2)"
-  }}
->
-  WhatsApp Export
-</a>
 
+      {/* WHATSAPP */}
+      <a
+        href="https://wa.me/216XXXXXXXX"
+        target="_blank"
+        style={{
+          position: "fixed",
+          bottom: "20px",
+          right: "20px",
+          background: "#25D366",
+          color: "white",
+          padding: "14px 18px",
+          borderRadius: "50px",
+          fontWeight: "bold"
+        }}
+      >
+        WhatsApp Export
+      </a>
 
     </main>
   );
 }
-
-const inputStyle = {
-  padding: "12px",
-  border: "1px solid #ddd",
-  borderRadius: "6px"
-};
-
-const buttonStyle = {
-  padding: "14px",
-  background: "#556B2F",
-  color: "white",
-  border: "none",
-  borderRadius: "6px",
-  cursor: "pointer"
-};
-
