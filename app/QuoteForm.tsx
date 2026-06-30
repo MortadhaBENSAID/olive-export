@@ -4,28 +4,28 @@ import { useState } from "react";
 
 export default function QuoteForm() {
 
-  async function handleSubmit(e) {
-    e.preventDefault();
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+      e.preventDefault();
 
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+      const form = e.currentTarget;
+      const formData = new FormData(form);
 
-    const data = {
-      company: formData.get("company"),
-      country: formData.get("country"),
-      email: formData.get("email"),
-      volume: formData.get("volume"),
-      message: formData.get("message"),
-    };
+      const data = {
+        company: formData.get("company"),
+        country: formData.get("country"),
+        email: formData.get("email"),
+        volume: formData.get("volume"),
+        message: formData.get("message"),
+      };
 
-    await fetch("/api/quote", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    });
+      await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
 
-    alert("Request sent!");
-    form.reset();
+      alert("Request sent!");
+      form.reset();
   }
 
   return (
