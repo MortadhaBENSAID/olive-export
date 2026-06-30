@@ -116,14 +116,14 @@ export default function Home() {
           <section style={{
         padding: "80px 60px",
         background: "#fff",
-        display: "grid",
-        gridTemplateColumns: "repeat(2, 1fr)",
+ 
+        /*gridTemplateColumns: "repeat(2, 1fr)",*/
         gap: "30px"
       }}>
             <a href="#quote" style={{
             display: "inline-block",
             marginTop: "0px",
-            padding: "14px 26px",
+            padding: "14px 16px",
             background: "#556B2F",
             color: "white",
             textDecoration: "none",

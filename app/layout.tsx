@@ -50,6 +50,7 @@ export default function RootLayout({
         <nav style={{ display: "flex", gap: "18px" }}>
 
           <a href="/" style={{ textDecoration: "none", color: "#1f1f1f" }}>Home</a>
+          <a href="/story" style={{ textDecoration: "none", color: "#1f1f1f" }}>Our story</a>
           <a href="/about" style={{ textDecoration: "none", color: "#1f1f1f" }}>About Factory</a>
           <a href="/bulk-export" style={{ textDecoration: "none", color: "#1f1f1f" }}>Bulk Export</a>
           <a href="/private-label" style={{ textDecoration: "none", color: "#1f1f1f" }}>Private Label</a>
