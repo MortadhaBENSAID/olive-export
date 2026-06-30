@@ -142,7 +142,7 @@ export default function Home() {
 
         <div>
           <img
-            src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+            src="/images/origin.jfif"
             style={{ width: "100%", borderRadius: "10px" }}
           />
           <h3>🇹🇳 Origin Tunisia</h3>
@@ -151,7 +151,7 @@ export default function Home() {
 
         <div>
           <img
-            src="https://images.unsplash.com/photo-1581093458791-9d42e1b8b2d0"
+            src="/images/qualitytest.jfif"
             style={{ width: "100%", borderRadius: "10px" }}
           />
           <h3>🧪 Lab Tested</h3>
@@ -160,7 +160,7 @@ export default function Home() {
 
         <div>
           <img
-            src="https://images.unsplash.com/photo-1604908812186-6c0a3c3d2c8a"
+            src="/images/exportready.jfif"
             style={{ width: "100%", borderRadius: "10px" }}
           />
           <h3>🚢 Export Ready</h3>
@@ -202,7 +202,7 @@ export default function Home() {
 
         <div>
           <img
-            src="https://images.unsplash.com/photo-1603048297172-c92544798d5a"
+            src="/images/coldpressure.jfif"
             style={{ width: "100%", borderRadius: "10px" }}
           />
           <h3>Cold Pressed</h3>
@@ -211,7 +211,7 @@ export default function Home() {
 
         <div>
           <img
-            src="https://images.unsplash.com/photo-1584270354949-c26b0d5b4a0a"
+            src="/images/certifyed1.jfif"
             style={{ width: "100%", borderRadius: "10px" }}
           />
           <h3>Export Certified</h3>
@@ -232,31 +232,35 @@ export default function Home() {
       {/* PRODUCTS */}
       <section style={{
         padding: "80px 60px",
-        background: "#f5f1e6"
+        background: "#f5f1e6",
+        display: "grid",
+        gridTemplateColumns: "repeat(2, 1fr)",
+        gap: "30px"
       }}>
-
-        <h2>Export Solutions</h2>
-
-        <img
-          src="https://images.unsplash.com/photo-1615485290382-441e4d9a0c8a"
-          style={{
-            width: "100%",
-            marginTop: "20px",
-            borderRadius: "12px"
-          }}
-        />
-
-        <ul style={{ fontSize: "18px", marginTop: "20px", lineHeight: "2" }}>
+<div> 
+        <h1>Export Solutions</h1>
+      <ul style={{ fontSize: "18px", marginTop: "20px", lineHeight: "2" }}>
           <li>Extra Virgin Olive Oil (Premium Grade)</li>
           <li>Virgin Olive Oil</li>
           <li>Organic Certified Olive Oil</li>
           <li>Private Label Manufacturing</li>
           <li>Bulk Industrial Supply (B2B Export)</li>
         </ul>
-      </section>
+        </div> 
+        <img
+          src="/images/exportation solution.jfif"
+          style={{
+            width: "100%",
+            marginTop: "20px",
+            borderRadius: "12px"
+          }}
+        />
+        </section>
+
 
       {/* FORM */}
-      <section id="quote" style={{ padding: "80px 60px" }}>
+      <section id="quote" style={{ padding: "80px 60px", background: "#fff"
+       }}>
         <h2>Request a Quote</h2>
         <QuoteForm />
       </section>

@@ -48,7 +48,18 @@ export default function QuoteForm() {
       />
 
       <button type="submit">
-        Send Request
+         <a href="#quote" style={{
+            display: "inline-block",
+            marginTop: "0px",
+            padding: "14px 10px",
+            background: "#556B2F",
+            color: "white",
+            textDecoration: "none",
+            borderRadius: "18px"
+          }}>
+          Send Request          
+          </a>
+        
       </button>
 
     </form>
