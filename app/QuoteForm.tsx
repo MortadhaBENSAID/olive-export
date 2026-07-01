@@ -32,7 +32,7 @@ export default function QuoteForm() {
     <form onSubmit={handleSubmit} style={{
       display: "flex",
       flexDirection: "column",
-      gap: "12px",
+      gap: "44px",
       maxWidth: "450px"
     }}>
 

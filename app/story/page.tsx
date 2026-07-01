@@ -1,183 +1,150 @@
-export default function HomePage() {
+export default function AboutPage() {
   return (
     <main className="bg-white text-gray-900">
 
-      {/* HERO SECTION */}
-      <section className="w-full py-24 px-6 md:px-16 lg:px-32 bg-[#f8f7f3]">
+      {/* Hero */}
+      <section className="bg-[#F8F6F1] py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto text-center">
 
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Premium Organic Extra Virgin Olive Oil
+          <span className="uppercase tracking-[0.3em] text-green-700 font-medium">
+            Our Story
+          </span>
+
+          <h1 className="mt-6 text-5xl md:text-6xl font-bold leading-tight">
+            A Family Heritage,
+            <br />
+            Rooted in Tunisia
           </h1>
 
-          <p className="mt-6 text-lg md:text-xl text-gray-700">
-            Authentic Tunisian olive oil for international B2B markets.
-            Traceable, consistent, and carefully selected from family-owned groves.
+          <p className="mt-8 text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            From the fertile hills of Le Kef to the sun-drenched landscapes of
+            Gafsa, our olive oil is the expression of generations of family
+            tradition, exceptional terroirs and an uncompromising commitment to quality.
           </p>
-
-          <div className="mt-10 flex flex-col md:flex-row gap-4 justify-center">
-            <button className="px-6 py-3 bg-green-700 text-white rounded-lg">
-              Request Wholesale Pricing
-            </button>
-            <button className="px-6 py-3 border border-green-700 text-green-700 rounded-lg">
-              Become a Partner
-            </button>
-          </div>
 
         </div>
       </section>
 
-      {/* ABOUT US */}
-      <section className="py-24 px-6 md:px-16 lg:px-32">
+      {/* Story */}
+      <section className="py-24 px-6 md:px-16">
+
         <div className="max-w-5xl mx-auto">
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-10">
+          <h2 className="text-4xl font-bold mb-12">
             About Us
           </h2>
 
-          <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
+          <div className="space-y-8 text-lg text-gray-700 leading-9">
 
             <p>
-              Our company was founded by two engineers driven by a shared vision:
-              to structure and export a premium, traceable Tunisian extra virgin olive oil
-              to international markets.
+              Our story begins long before the creation of our company.
+              It began with our families, whose lives have been closely connected
+              to olive cultivation for generations. Across the fertile lands of
+              <strong> Le Kef</strong>, in northwestern Tunisia, and the historic
+              region of <strong>Gafsa</strong>, in the south, olive growing has
+              always been more than agriculture—it is a heritage passed from one
+              generation to the next.
             </p>
 
             <p>
-              With backgrounds in electrical and mechanical engineering, we apply a
-              structured and quality-driven approach to every step of the supply chain.
-              Our focus is reliability, consistency, and long-term value.
+              Together, our family-owned estates extend over more than
+              <strong> 300 hectares</strong>, bringing together thousands of olive
+              trees carefully cultivated with respect for nature and traditional
+              farming practices. Each region contributes its own identity:
+              the Mediterranean climate and fertile soils of Le Kef produce
+              elegant and balanced oils, while the dry, mineral-rich landscapes
+              of Gafsa create olives with remarkable depth and intensity.
             </p>
 
             <p>
-              Our olive oil comes from family-owned groves located in two historic
-              regions of Tunisia: Kef and Gafsa. These lands are known for their rich
-              soil and traditional olive cultivation.
+              This unique combination of northern and southern terroirs gives our
+              olive oil a distinctive character that reflects the richness and
+              diversity of Tunisia's olive-growing heritage.
             </p>
 
             <p>
-              We are transforming this agricultural heritage into a structured export
-              product meeting international B2B standards, with full traceability and
-              strict quality control.
+              Every harvest is carried out at the optimal stage of ripeness, and
+              the olives are cold extracted within hours to preserve their natural
+              freshness, antioxidants and aromatic complexity. Every batch is
+              carefully selected to ensure consistency, purity and exceptional quality.
             </p>
 
             <p>
-              Our initial focus is on France and the United Kingdom, working with
-              importers, distributors, private label brands, and food professionals.
+              Today, we proudly bring this family heritage to international markets, 
+              building long-term partnerships with wholesalers, distributors, retailers,
+              food service professionals, private label brands, and selected import partners
+              who share our commitment to authenticity, uncompromising quality, 
+              complete traceability, and reliable supply.
+            </p>
+
+            <p>
+              Our ambition extends far beyond exporting olive oil. We are committed to showcasing
+              the excellence of Tunisia's finest terroirs while preserving the values that have 
+              guided our families for generations: integrity, respect for the land, and an uncompromising
+              pursuit of excellence.
             </p>
 
           </div>
 
         </div>
+
       </section>
 
-      {/* PRODUCT SECTION */}
-      <section className="py-24 px-6 md:px-16 lg:px-32 bg-[#f8f7f3]">
-        <div className="max-w-5xl mx-auto">
+      {/* Numbers */}
 
-          <h2 className="text-3xl md:text-4xl font-bold mb-10">
-            Our Product
-          </h2>
+      <section className="bg-[#F8F6F1] py-24 px-6 md:px-16">
 
-          <p className="text-lg text-gray-700 mb-8">
-            We supply premium extra virgin olive oil designed for professional use.
-          </p>
+        <div className="max-w-6xl mx-auto">
 
-          <ul className="space-y-4 text-gray-700 text-lg">
-            <li>• 100% organic cultivation</li>
-            <li>• Cold extraction process</li>
-            <li>• Low acidity & rich sensory profile</li>
-            <li>• Batch traceability</li>
-            <li>• Export-ready logistics</li>
-          </ul>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-12 text-center">
 
-          <p className="mt-8 text-gray-700">
-            Available in bulk, private label, and retail-ready formats.
+            <div>
+              <h3 className="text-5xl font-bold text-green-700">
+                300+
+              </h3>
+              <p className="mt-3 text-gray-600">
+                Hectares of Olive Groves
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-5xl font-bold text-green-700">
+                40,000+
+              </h3>
+              <p className="mt-3 text-gray-600">
+                Olive Trees
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-5xl font-bold text-green-700">
+                100%
+              </h3>
+              <p className="mt-3 text-gray-600">
+                Family-Owned Production
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      {/* Closing Quote */}
+
+      <section className="py-24 px-6 md:px-16">
+
+        <div className="max-w-4xl mx-auto text-center">
+
+          <p className="text-3xl italic text-gray-800 leading-relaxed">
+            "Every olive tells the story of our land.
+            Every drop reflects generations of dedication,
+            craftsmanship and respect for nature."
           </p>
 
         </div>
-      </section>
 
-      {/* QUALITY */}
-      <section className="py-24 px-6 md:px-16 lg:px-32">
-        <div className="max-w-5xl mx-auto">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-10">
-            Quality & Traceability
-          </h2>
-
-          <p className="text-lg text-gray-700 leading-relaxed">
-            We ensure full control from grove to shipment: harvesting supervision,
-            batch selection, laboratory testing, and standardized export processes.
-            Our objective is to guarantee consistent quality at scale.
-          </p>
-
-        </div>
-      </section>
-
-      {/* MARKET FOCUS */}
-      <section className="py-24 px-6 md:px-16 lg:px-32 bg-[#f8f7f3]">
-        <div className="max-w-5xl mx-auto">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-10">
-            Market Focus
-          </h2>
-
-          <p className="text-lg text-gray-700 mb-6">
-            We currently focus on:
-          </p>
-
-          <ul className="space-y-3 text-lg text-gray-700">
-            <li>• France</li>
-            <li>• United Kingdom</li>
-          </ul>
-
-          <p className="mt-6 text-gray-700">
-            And we are expanding toward Europe and international markets.
-          </p>
-
-        </div>
-      </section>
-
-      {/* VISION */}
-      <section className="py-24 px-6 md:px-16 lg:px-32">
-        <div className="max-w-5xl mx-auto text-center">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
-            Our Vision
-          </h2>
-
-          <p className="text-lg text-gray-700 leading-relaxed">
-            To become a trusted reference in premium Tunisian olive oil exports
-            by combining agricultural heritage, engineering discipline, and
-            modern supply chain standards.
-          </p>
-
-          <p className="mt-6 text-lg font-medium text-gray-900">
-            We do not aim to reinvent olive oil — we aim to structure its origin
-            into a reliable international product.
-          </p>
-
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-24 px-6 md:px-16 lg:px-32 bg-green-800 text-white">
-        <div className="max-w-5xl mx-auto text-center">
-
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Let’s build a long-term partnership
-          </h2>
-
-          <p className="text-lg mb-10">
-            We work with importers, distributors, and private label brands worldwide.
-          </p>
-
-          <button className="px-8 py-4 bg-white text-green-800 font-semibold rounded-lg">
-            Contact Sales
-          </button>
-
-        </div>
       </section>
 
     </main>
