@@ -261,7 +261,13 @@ export default function Home() {
       {/* FORM */}
       <section id="quote" style={{ padding: "80px 60px", background: "#fff"
        }}>
-        <h2>Request a Quote</h2>
+        <h2 style={{
+
+            marginBottom: "33px",
+            padding: "12px 12px",
+            textDecoration: "underline",
+
+          }}>Request a Quote</h2>
         <QuoteForm />
       </section>
 
